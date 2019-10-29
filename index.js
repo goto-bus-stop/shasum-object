@@ -6,5 +6,7 @@ module.exports = function shasum (input, hash, digest) {
   if (!digest) digest = 'hex'
   if (typeof input !== 'string' && !Buffer.isBuffer(input)) input = stringify.stable(input)
 
-  return createHash(hash).update(input).digest(digest)
+  return createHash(hash)
+    .update(input, typeof input === 'string' ? 'utf8' : undefined)
+    .digest(digest)
 }
