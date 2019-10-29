@@ -1,7 +1,7 @@
 {
   "name": "shasum-object",
   "description": "get the shasum of a buffer or object",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": {
     "url": "https://github.com/goto-bus-stop/shasum-object/issues"
