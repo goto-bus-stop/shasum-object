@@ -2,6 +2,8 @@
 
 get the shasum of a buffer or object
 
+it is more or less identical to [shasum](https://github.com/dominictarr/shasum), but tested on a lot of node.js versions and with smaller, actively maintained dependencies
+
 [Install](#install) - [Usage](#usage) - [License: Apache-2.0](#license)
 
 [![npm][npm-image]][npm-url]
