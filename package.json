@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "safe-buffer": "^5.2.0",
-    "standard": "^14.3.1",
+    "standard": "^16.0.1",
     "tape": "^5.0.0"
   },
   "homepage": "https://github.com/goto-bus-stop/shasum-object",
