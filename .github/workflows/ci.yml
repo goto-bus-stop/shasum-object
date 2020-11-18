@@ -28,11 +28,17 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
       - name: Install latest npm
-        run: nvm install-latest-npm
+        run: |
+          source /home/runner/mynvm/nvm.sh
+          nvm install-latest-npm
       - name: Install dependencies
-        run: npm install
+        run: |
+          source /home/runner/mynvm/nvm.sh
+          npm install
       - name: Run tests
-        run: npm test
+        run: |
+          source /home/runner/mynvm/nvm.sh
+          npm test
 
   lint:
     name: Standard Style
