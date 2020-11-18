@@ -30,6 +30,7 @@
     "url": "https://github.com/goto-bus-stop/shasum-object.git"
   },
   "scripts": {
-    "test": "standard && node test"
+    "lint": "standard",
+    "test": "node test"
   }
 }
