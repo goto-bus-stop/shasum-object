@@ -35,6 +35,8 @@ jobs:
         run: |
           source /home/runner/mynvm/nvm.sh
           npm install
+        env:
+          NPM_CONFIG_STRICT_SSL: ${{matrix.node-version != '0.8'}}
       - name: Run tests
         run: |
           source /home/runner/mynvm/nvm.sh
