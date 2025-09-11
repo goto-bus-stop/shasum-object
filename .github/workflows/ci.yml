@@ -26,12 +26,13 @@ jobs:
           - '21.x'
           - '22.x'
           - '23.x'
+          - '24.x'
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_STRICT_SSL: ${{matrix.node-version != '0.8'}}
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Install Node.js ${{matrix.node-version}}
         uses: dcodeIO/setup-node-nvm@v4
         with:
@@ -54,11 +55,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v5
         with:
-            node-version: 14.x
+            node-version: lts/*
       - name: Install dependencies
         run: npm install
       - name: Check style
