@@ -1,7 +1,7 @@
 {
   "name": "shasum-object",
   "description": "get the shasum of a buffer or object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Renée Kooi <renee@kooi.me>",
   "bin": "bin.js",
   "bugs": {
